@@ -42,12 +42,67 @@ nav{
 .headerPages ul{
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 15px;
 }
 
 .headerIcons{
     display: flex;
     font-size: 1.25rem;
     gap: 10px;
+    align-items: center;
+    margin-right: 30px;
 }
 
+.headerMenu{
+    display: none;
+}
+
+.headerPages li a{
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 9px;
+    font-weight: bold;
+    background: url(gradientPages.png) center;
+    background-size: cover;
+    background-clip: text;
+    cursor: pointer;
+    color: transparent;
+    animation: gadient 6s linear infinite;
+}
+@keyframes gadient{
+    to{
+        background-position-x: -200px;
+    }
+}
+.headerPages li a:active{
+    background-color: var(--textcolor);
+    text-decoration: underline;
+}
+
+.headerIcons a{
+    padding: .25rem .75rem;
+    background-color: rgba(23, 22, 24, 0.496);
+    color: rgba(20, 21, 22, 0.834);
+    border-radius: 9px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.headerIcons a:before{
+    position: absolute;
+    content: '';
+    left: -55%; top: 0%;
+    height: 100%;
+    width: 50%;
+    background: rgb(225, 225, 225 ,0.2);
+    transform: skewX(-30deg);
+    transition: left 0.5s;
+}
+.headerIcons a:hover::before{
+    left: 120%;
+}
