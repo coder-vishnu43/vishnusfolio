@@ -1,0 +1,53 @@
+:root{
+    --textcolor: #0E1926;
+    --lkcolor: #2C7BDF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",'Segoe UI', sans-serif;
+    background-image: url(bgportfolio.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+nav{
+    background-color: white;
+    height: 70px;
+    width: 95vw;
+    margin: 1.25rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px 100px / 120px;
+    opacity: 85%;
+}
+
+.headerName{
+    padding: 1rem 2rem;
+}
+
+.headerPages ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.headerIcons{
+    display: flex;
+    font-size: 1.25rem;
+    gap: 10px;
+}
+
