@@ -189,4 +189,8 @@ nav {
     
   }
 }
-
+@media(max-width:768px){
+    .headerIcons .iconsSpan{
+        display: none;
+    }
+}
