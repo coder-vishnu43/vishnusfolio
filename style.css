@@ -63,6 +63,9 @@ nav {
   gap: 7px;
   color: black;
 }
+.navHeaderPages{
+    display: none;
+}
 
 .headerPages li a, .navHeaderPages li a {
   display: flex;
