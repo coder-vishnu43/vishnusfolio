@@ -20,6 +20,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    background-clip: content-box;
 }
 
 a {
@@ -220,6 +221,11 @@ nav {
     .headerIcons .iconsSpan {
         display: none;
     }
+    .headshotImg img {
+        width: 200px;
+        margin: 4% 0;
+    }
+    
 
 }
 
@@ -328,7 +334,6 @@ nav {
     }
     .headshotImg img {
         width: 400px;
-        margin: 0 0;
         margin: 4% 0;
     }
     .headshotImg{
@@ -336,17 +341,23 @@ nav {
         justify-content: center;
     }
     .aboutMeText p {
-    width: 65%;
+    width: 95%;
     }
     .aboutMeText{
         max-width: 100%;
         margin: 0 0;
     }
-    .aboutMeText{
+    .aboutMeText .abouth2{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
+    .herobtns {
+    margin-top: 1.3rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+}
 }
