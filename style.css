@@ -263,6 +263,7 @@ nav {
 }
 .aboutMeText p strong:hover{
     color: rgb(255, 55, 195);
+    transition: all 0.3s ease-in-out;
 }
 
 .abouth2 h2 {
