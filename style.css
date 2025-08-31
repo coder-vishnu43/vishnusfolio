@@ -232,9 +232,9 @@ nav {
 .hero {
     display: flex;
     padding: 1rem 2rem;
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.38);
-    -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.38);
-    -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 2px 6px 0px rgba(247, 246, 246, 0.984);
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(252, 249, 249, 0.38);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(248, 246, 246, 0.38);
 }
 
 .headshotImg img {
@@ -380,9 +380,9 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.38);
-    -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.38);
-    -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 2px 6px 0px rgba(247, 246, 246, 0.984);
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(252, 249, 249, 0.38);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(248, 246, 246, 0.38);
     margin-bottom: 50%;
 }
 
@@ -414,7 +414,7 @@ nav {
 .divider {
     width: 2px;
     height: 14vh;
-    background-color: black;
+    background-color: #e6d6ff;
 }
 
 .languagesIcons h3 {
