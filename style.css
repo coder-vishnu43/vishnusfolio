@@ -218,9 +218,6 @@ nav {
 }
 
 @media(max-width:768px) {
-    body{
-        background-attachment: scroll;
-    }
     .headerIcons .iconsSpan {
         display: none;
     }
