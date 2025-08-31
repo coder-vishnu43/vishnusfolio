@@ -250,7 +250,6 @@ nav {
 
 .aboutMeText {
     color: #e6d6ff;
-    text-shadow: 2px 2px 6px rgba(217, 211, 211, 0.6);
     margin-left: 17%;
     margin-top: 10%;
     width: max-content;
@@ -375,7 +374,6 @@ nav {
 /* SECTION 2: skills */
 .skills {
     color: #e6d6ff;
-    text-shadow: 2px 2px 6px rgba(217, 211, 211, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
