@@ -105,7 +105,8 @@ nav {
 .projectBox2 a,
 .projectBox3 a,
 .projectBox4 a,
-.hbox a,.Contact button {
+.hbox a,
+.Contact button {
     padding: 0.25rem 0.75rem;
     background-color: rgba(23, 22, 24, 0.496);
     color: rgba(20, 21, 22, 0.834);
@@ -122,7 +123,8 @@ nav {
 .projectBox2 a:before,
 .projectBox3 a:before,
 .projectBox4 a:before,
-.hbox a:before,.Contact button:before{
+.hbox a:before,
+.Contact button:before {
     position: absolute;
     content: '';
     left: -55%;
@@ -140,7 +142,8 @@ nav {
 .projectBox2 a:hover::before,
 .projectBox3 a:hover::before,
 .projectBox4 a:hover::before,
-.hbox a:hover::before,.Contact button:hover::before {
+.hbox a:hover::before,
+.Contact button:hover::before {
     left: 120%;
 }
 
@@ -665,7 +668,7 @@ nav {
 
 /* SECTION 5: CONTACT*/
 
-.Contact{
+.Contact {
     display: flex;
     justify-content: center top;
     align-items: center;
@@ -680,7 +683,7 @@ nav {
 }
 
 
-.bothWrap{
+.bothWrap {
     display: flex;
     justify-content: row center;
     gap: 30px;
@@ -710,13 +713,13 @@ form {
     padding: 0.7rem 1.5rem;
 }
 
-.contactAnimation{
+.contactAnimation {
     display: flex;
     justify-content: top;
     margin-top: -30px;
 }
 
-.Contact button{
+.Contact button {
     padding: 0.4rem 0.8rem;
     border-radius: 6px;
     background-color: #2c7bdf;
@@ -725,30 +728,31 @@ form {
     height: 60px;
     font-size: large;
     font-weight: bold;
-    
-margin-top: 2%;
+
+    margin-top: 2%;
 }
 
-@media(max-width:1024px){
+@media(max-width:1024px) {
     .contactInput {
-    width: 40vw;
-    height: 5vh;
-}
-    .contactAnimation{
+        width: 40vw;
+        height: 5vh;
+    }
+
+    .contactAnimation {
         display: none;
     }
 }
 
-@media(max-width:1024px){
+@media(max-width:1024px) {
     .contactInput {
-    width: 50vw;
-    height: 5vh;
-}
+        width: 50vw;
+        height: 5vh;
+    }
 }
 
 /* FOOTER */
 
-footer{
+footer {
     width: 100%;
     background-color: #080808;
     color: white;
@@ -756,4 +760,21 @@ footer{
     justify-content: center;
     align-items: center;
     height: 5vh;
+}
+
+.fade-in,
+.fade-left,
+.fade-right,
+.fade {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+.fade-in.show,
+.fade-right.show,
+.fade-left.show,
+.fade {
+    opacity: 1;
+    transform: translateY(0);
 }

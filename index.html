@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
   <link rel="preload" href="images/bgportfolio.jpg" as="image">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
@@ -26,8 +29,8 @@
       <ul>
         <li><a href="/index.html"><span>Home</span></a></li>
         <li><a href="#"><span>Myself</span></a></li>
-        <li><a href="#"><span>Projects</span></a></li>
-        <li><a href="#"><span>Contact</span></a></li>
+        <li><a href="#projects"><span>Projects</span></a></li>
+        <li><a href="#contact"><span>Contact</span></a></li>
       </ul>
     </div>
 
@@ -59,7 +62,7 @@
 
   <main>
     <!--SECTION 1: HERO-->
-    <section class="hero">
+    <section class="hero" data-aos="fade-up">
       <div class="headshotImg">
         <img src="images/vishnuheadshot.png" alt="vishnu">
       </div>
@@ -89,8 +92,8 @@
     <!--SECTION 2:skills-->
     <section class="skills">
 
-      <h2>Skills(in progress)</h2>
-      <div class="languagesIcons">
+      <h2 data-aos="fade">Skills(in progress)</h2>
+      <div class="languagesIcons" data-aos="fade-right">
         <h3>Programming-Languages</h3>
         <span class="divider">
 
@@ -104,7 +107,7 @@
 
       </div>
 
-      <div class="languagesIcons">
+      <div class="languagesIcons" data-aos="fade-left">
         <h3>Programming-Libraries</h3>
         <span class="divider">
 
@@ -123,13 +126,13 @@
 
 
     <!--SECTION 3: projects-->
-    <section class="projects">
+    <section class="projects" id="projects">
 
-      <h2>Projects(in progress)</h2>
+      <h2 data-aos="fade">Projects(in progress)</h2>
 
       <div class="projectWrap">
 
-        <div class="projectBox1">
+        <div class="projectBox1" data-aos="fade-up">
           <h3>MY THOUGHTS</h3>
           <img src="images/mythoughts.png" alt="my thoughts">
           <p>A Space, where my ideas and imaginations take shape, Here you may find the growth of my future big
@@ -138,7 +141,7 @@
           <a href="#">Have a look👀</a>
         </div>
 
-        <div class="projectBox2">
+        <div class="projectBox2" data-aos="fade-up">
           <h3>BEGINEER PRJ</h3>
           <img src="images/beginner.png" alt="beginner">
           <p>Simple, yet fun builds that would help me to upskill my foundations. Perfect to make my ideas into working
@@ -146,14 +149,14 @@
           <a href="#">Have a look👀</a>
         </div>
 
-        <div class="projectBox3">
+        <div class="projectBox3" data-aos="fade-up">
           <h3>INTERMEDIATE PRJ</h3>
           <img src="images/intermediate.png" alt="intermediate">
           <p>Solid, well-structured projects that will help me to tackel real world problem-solving abilities.</p>
           <a href="#">Have a look👀</a>
         </div>
 
-        <div class="projectBox4">
+        <div class="projectBox4" data-aos="fade-up">
           <h3>ADVANCED PRJ</h3>
           <img src="images/advanced.png" alt="advanced">
           <p>Complex, well polished builds that would challenge my limits and showcase my experience in building
@@ -168,8 +171,8 @@
 
     <!--SECTION 4: hackatons-->
     <section class="hackatons">
-      <h2>hackatons I Participated & projects</h2>
-      <div class="hbox">
+      <h2 data-aos="fade">hackatons I Participated & projects</h2>
+      <div class="hbox" data-aos="fade-up">
         <img src="images/hackathon.png" alt="hackathon img">
         <p>This is a platform where iam able to collaborate with multiple people and build projects in given time which
           may be a prototype or a working project that is impactful</p>
@@ -177,38 +180,44 @@
       </div>
     </section>
     <!--SECTION 5: contact-->
-    <section class="Contact">
+    <section class="Contact" id="contact">
 
 
-      <h2>Contact Me</h2>
+      <h2 data-aos="fade">Contact Me</h2>
       <div class="bothWrap">
 
 
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST" >
           <input type="hidden" name="access_key" value="95ebb651-ff05-42e5-9a78-e7700ddbb41a">
-          <input type="text" name="name" placeholder="Your Name" class="contactInput" required>
-          <input type="email" name="email" placeholder="Your Email" class="contactInput" required>
-          <textarea name="message" placeholder="Your Message" class="contactInput" required></textarea>
-          <button type="submit">Submit</button>
+          <input type="text" name="name" placeholder="Your Name" class="contactInput" required data-aos="fade-right">
+          <input type="email" name="email" placeholder="Your Email" class="contactInput" required data-aos="fade-right">
+          <textarea name="message" placeholder="Your Message" class="contactInput" required data-aos="fade-right"></textarea>
+          <button type="submit" data-aos="fade">Submit</button>
 
         </form>
 
 
-        <div class="contactAnimation">
+        <div class="contactAnimation" data-aos="fade-left">
           <lottie-player id="contactLottie" src="animations/contact us.json" background="transparent" speed="1" loop
-            autoplay 
-            style="width: 35vw; padding: 0.4rem 0.8rem; ">
+            autoplay style="width: 35vw; padding: 0.4rem 0.8rem; ">
           </lottie-player>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-<p>© 2025 Vishnu</p>
+  <footer >
+    <p>© 2025 Vishnu</p>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+  AOS.init({
+    duration: 800,
+    once: false   
+  });
+</script>
+
 </body>
 
 </html>
